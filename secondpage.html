@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="shorcut icon" type="image/png" href="img/logo.png">
+
+    <title>SECOND PAGE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <a href="index.html">IZ</a>
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+
+                    <a href="index.html" id="logo2">IZ</a>
+                    <ul>
+                        <li><a href="index.html" id="selected">HOMEPAGE</a></li>
+                        <li><a href="secondpage.html">SECOND PAGE</a></li>
+                        <li><a href="aboutus.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <script src="js/script.js"></script>
+    <br>
+    <section class="contenedor_general">
+        <div class="contenedor_escrito">
+            <br>
+            <br>
+            <h1>DOCKER</h1>
+            <br>
+            <br>
+
+            <h3>¿QUÉ ES DOCKER?</h3>
+            <br>
+
+            <p>
+                Es una plataforma para contenedores. Se instala en el servidor en el cual podrás ejecutar los contenedores. Podrás crear, iniciar y detener contenedores.
+                <br>
+                Básicamente sirve para desarrollar y ejecutar aplicaciones dentro de contenedores.
+
+            </p>
+            <br>
+            <br>
+            <h3>PRINCIPALES CARACTERÍSTICAS</h3>
+            <br>
+            <ul style="margin-left: 30px">
+                <li>Fiable.</li>
+                <li>Es capaz de desplegar varios contenedores en un mismo equipo.</li>
+                <li>Velocidad rápida al arrancar los servicios.</li>
+                <li>Contenedores muy livianos haciendo más fácil el almacenaje, transporte y despliegue.</li>
+                <li>Los contenedores se pueden desplegar en muchas plataformas.</li>
+                <li>Aplicaciones libres de las dependencias que tenga, solamente tendrán que estar instaladas en la máquina anfitrión.</li>
+            </ul>
+
+            <br>
+            <br>
+            <h3>COMANDOS BÁSICOS</h3>
+            <br>
+            <ul style="margin-left: 30px">
+                <li><b>DESCARGAR UNA IMAGEN (POR EJEMPLO DEBIAN)</b></li>
+                <p>EJM: docker pull debian</p>
+                <br>
+                <li><b>LISTA DE IMÁGENES DISPONIBLES EN EL SISTEMA</b></li>
+                <p>EJM: docker images</p>
+                <br>
+                <li><b>LISTA DE CONTENEDORES DISPONIBLES EN EL SISTEMA</b></li>
+                <p>EJM: docker ps -a</p>
+                <p>La opción -a sirve para ver los contenedores que están en ejecución y los que no.</p>
+                <br>
+                <li><b>PARA VER IMÁGENES (POR EJEMPLO UBUNTU)</b></li>
+                <p>EJM: docker search ubuntu</p>
+                <br>
+                <li><b>EJECUTAR IMAGEN POR PRIMERA VEZ (POR EJEMPLO UBUNTU)</b></li>
+                <p>EJM: docker run -it ubuntu</p>
+                <p>Solo para la primera vez que vayamos a ajecutar ya que sino abrirá un nuevo contenedor, en vez de abrir el que creamos anteriormente.</p>
+                <br>
+                <li><b>PARA ABRIR LA IMAGEN CREADA ANTERIORMENTE</b></li>
+                <p>EJM: docker start 'id o nombre'</p>
+                <br>
+                <li><b>PARA EJECUTAR LA IMAGEN</b></li>
+                <p>EJM: docker exec -it 'id o nombre' bash</p>
+                <br>
+                <li><b>PARAR CONTENEDOR</b></li>
+                <p>EJM: docker stop 'id o nombre'</p>
+                <br>
+                <li><b>ELIMINAR CONTENEDOR</b></li>
+                <p>EJM: docker rm 'id o nombre'</p>
+                <br>
+                <li><b>RENOMBRAR CONTENEDOR</b></li>
+                <p>EJM: docker rename 'id o nombre' 'nombre dado por nosotros'</p>
+                <br>
+                <li><b>FORMA DE VISUALIZAR DATOS DEL DOCKER</b></li>
+                <p>EJM: docker ps -a --format="ID:\t{{.ID}}\nName:\t{{.Names}}"</p>
+                <p>EJM: Usamos el --format y después añadimos filtros según lo que queramos visualizar.</p>
+                <br>
+            </ul>
+
+
+
+        </div>
+    </section>
+
+    <footer class="pie_pagina">
+        <div class="grupo_1">
+            <div class="box">
+                <div class="logo">
+                    <a href="index.html">IZ</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>NORMATIVA LEGAL</h3>
+                <br>
+                <p>PROTECCIÓN DE DATOS</p>
+                <p>POLÍTICA DE COOKIES</p>
+                <p>AVISO LEGAL</p>
+            </div>
+
+            <div class="box">
+                <h3>INFORMACIÓN DE CONTACTO</h3>
+                <br>
+                <p>UBICACIÓN: C/XXX XX XXXX</p>
+                <p>TELÉFONO: XXX XX XX XX</p>
+                <p>CORREO: XXXXXXX@XXXXXX</p>
+            </div>
+        </div>
+
+        <div class="grupo_2">
+            <small>© 2022 <b>Ismael Zambrano</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
